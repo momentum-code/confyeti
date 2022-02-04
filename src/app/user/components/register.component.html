@@ -1,0 +1,24 @@
+<form [formGroup]="form">
+  <div>
+    <label for="email">
+      Email
+    </label>
+    <input id="email" type="text" formControlName="email">
+  </div>
+
+  <div>
+    <label for="password">
+      Password
+    </label>
+    <input id="password" type="text" formControlName="password">
+  </div>
+
+  <div>
+    <label for="confirmPassword">
+      Confirm Password
+    </label>
+    <input id="confirmPassword" type="text" formControlName="confirmPassword">
+  </div>
+
+  <button type="button" (click)="onSubmit(form.value)">Register</button>
+</form>
